@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rampart One', cursive;
+}
+body{
+  background: #252737;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #252737;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.show{
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+.form{
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  width: 300px;
+  height: 300px;
+  background: dodgerblue;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+.form input{
+  width: 100%;
+  background: none;
+  color: black;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: none;
+  margin: 2rem 0;
+}
+::placeholder{
+  color: black;
+}
+.form button{
+  padding: 0.5rem 2rem;
+  color: black;
+  background: #08B2FF;
+  margin: 1rem 0.8rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.form .start{
+  background: seagreen;
+  padding: 0.5rem 2rem;
+}
+.header{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .user-name{
+  color: dodgerblue;
+  font-size: 2rem;
+}
+.header .user-life{
+  font-size: 1.5rem;
+  color: dodgerblue;
+}
+.user-life .life{
+  color: green;
+}
+.game-container{
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.number-container{
+  width: 200px;
+  height: 200px;
+  border: 20px solid dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.number{
+  font-size: 4rem;
+  color: dodgerblue;
+  opacity: 0;
+  transition: 0.5s;
+}
+#number-input{
+  width: 70%;
+  padding:0.3rem 1rem;
+  background: transparent;
+  border: 2px solid dodgerblue;
+  outline: none;
+  color: ghostwhite;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.inputs button{
+  background: dodgerblue;
+  padding:0.5rem 1rem;
+  border: 2px solid black;
+}
+.mode{
+  color: dodgerblue;
+  font-size: 1.5rem;
+}
